@@ -37,7 +37,7 @@ Currently only supports tf.keras API, does not support other TensorFlow APIs suc
     
     First you'll need to use ```AC_Block()``` to build your model, it takes in almost the same parameters as the normal ```keras.layers.Conv2D()``` and ```keras.layers.BatchNormalization()```. Note you must pass in the name of each module for deploying purpose.
 
-    After you've trained and saved your model with AC modules, use the ```deploy()``` function to convert it to deploy mode. Simply pass in the checkpoint file in .h5 format and a list of AC module names. It will convert it to deply mode and save a new model for you. Note that the converted model is not compiled yet, you'll need to compile it afterwards. 
+    After you've trained and saved your model with AC modules, use the ```deploy()``` function to convert it to deploy mode. Simply pass in the checkpoint file in .h5 format and a list of AC module names. It will convert it to deploy mode and save a new model for you. Note that the converted model is not compiled yet, you'll need to compile it afterwards. 
 
     All functionalities only support tf.keras API for now.
     
